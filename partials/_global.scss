@@ -1,0 +1,43 @@
+$raleway: 'Raleway', sans-serif;
+$notoSerif: 'Noto Serif', serif;
+
+h1,
+h2,
+h3,
+ul {
+    font-family: $raleway;
+}
+
+h1,
+h2,
+h3,
+p, 
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    @include fontSize(20);
+}
+
+.wrapper {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.flex {
+    display:flex;
+}

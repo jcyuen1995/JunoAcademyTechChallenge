@@ -1,0 +1,191 @@
+section.pageEnd {
+    background-color: #454545;
+    padding: 3% 0;
+
+    div {
+        color: #fff;
+        flex-wrap:wrap;
+        h3 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            padding: 1% 0;
+        }
+        p {
+            font-family: $raleway;
+            padding: 1% 0;
+            font-size: 1.3rem;
+            font-weight: 200;
+        }
+
+        &.info {
+            width: 35%;
+        }
+
+        &.bottomLinks {
+            padding: 0 2%;
+            width: 15%;
+            text-transform: uppercase;
+            ul {
+                padding: 1% 0;
+                display:flex;
+                flex-direction: column;
+                font-size: 1.4rem;
+                li {
+                    padding: 3% 0;
+                    
+                    &:hover {
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+
+        &.newsLetter {
+            width: 50%;
+            P {
+                padding: 0;
+                padding-bottom: 2%;
+            }
+            form input[type = "email"] {
+                width: 50%;
+                padding: 1% 0;
+                &::placeholder {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    font-style: italic;
+                    font-family: $notoSerif;
+                    border:0;
+                }
+            }
+            form input[type = "submit"] {
+                background: red;
+                color: rgba(255,255,255, 0.7);
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                width: 25%;
+                margin-left: 1%;
+                border: 0;
+                padding: 1.5%;
+            }
+        }
+    }
+}
+footer {
+    background-color: #202020;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-top: black solid 2px;
+    div {
+        padding: 1% 0;
+        h3{
+            width: 90%;
+        }
+        ul {
+            display:flex;
+            justify-content: space-between;
+            width: 10%;
+        }
+    }
+}
+
+@media (max-width: 961px) {
+    section.pageEnd{
+        display:flex;
+        flex:wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        div.bottomLinks{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            width: 20%;
+            position:relative;
+            transform: translateY(40%);
+            ul {
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+        div.newsLetter {
+            width: 80%;
+        }
+        div.info {
+            width: 80%;
+        }
+    }
+    footer {
+        div{
+            h3{
+                width: 80%
+            }
+            ul {
+                width: 20%;
+            }
+        }
+    }
+}
+
+@media (max-width: 627px) {
+    footer {
+        div {
+            h3 {
+                width: 60%
+            }
+            ul {
+                width: 40%;
+            }
+        }
+    }
+    section.pageEnd {
+        div {
+            color: #fff;
+            h3 {
+                text-align: center;
+            }
+    
+            &.info {
+                padding: 3% 0;
+                width: 100%;
+                order: 2;
+            }
+    
+            &.bottomLinks {
+                padding: 0 0%;
+                width: 100%;
+                text-transform: uppercase;
+                transform: translateY(0);
+                order: 1;
+                ul {
+
+                    flex-direction: row;
+                    width: 100%;
+                    text-align: center;
+                    flex-wrap:wrap;
+                    li {
+                        width: 50%;
+                        border: 1px solid white;
+                    }
+                    li:nth-child(3) {
+                        width: 100%;
+                    }
+                }
+
+            }
+    
+            &.newsLetter {
+                padding: 3% 0;
+                text-align: center;
+                width: 100%;
+                order: 3;
+
+                form input[type = "submit"] {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

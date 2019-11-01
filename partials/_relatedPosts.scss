@@ -1,0 +1,116 @@
+section.relatedPosts {
+    background:  #e5e5e5;
+    padding: 4% 0;
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: rgba(0,0,0,0.8);
+    }
+    div.flex {
+        margin: 3% 0;
+        justify-content: space-between;
+        height: 100%;
+        article.post {
+            width: 30%;
+            height: 100%;
+            img {
+                width: 100%;
+                display: block;
+            }
+            section {
+                text-align:center;
+                padding: 5% 0;
+                background-color: white;
+                h3 {
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                }
+                h4 {
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    font-style: italic;
+                    font-size: 1.3rem;
+                    font-family: $notoSerif;
+                    margin: 2% 0;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    font-family: $raleway;
+                    text-align: left;
+                    padding: 0 7%;
+                }
+                a {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-family: $raleway;
+                    display:block;
+                    color: red;
+                    margin: 5% 0;
+                    font-size: 1.3rem;
+                    
+                    &:hover {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 961px){
+    section.relatedPosts{
+        
+        div.flex{
+            article.post {
+                section {
+                    text-align:center;
+                    padding: 5% 0;
+                    background-color: white;
+                    h3 {
+                        font-size: 1.3rem;
+                    }
+                    h4 {
+                        font-size: 1.3rem;
+                    }
+                    p {
+                        font-size: 1.1rem;
+                    }
+                    a {
+                        font-size: 1.2rem;
+                        
+                        &:hover {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 614px) {
+    section.relatedPosts{
+        div.flex {
+            flex-wrap:wrap;
+            justify-content: space-around;
+            article.post{
+                width: 40%;
+                margin-bottom: 4%;
+            }
+        }
+    }
+}
+
+@media (max-width: 461px) {
+    section.relatedPosts{
+        div.flex {
+            // flex-wrap:wrap;
+            // justify-content: space-around;
+            article.post{
+                width: 100%;
+                margin-bottom: 4%;
+            }
+        }
+    }
+}

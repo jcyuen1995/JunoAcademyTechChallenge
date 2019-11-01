@@ -1,0 +1,114 @@
+i.fas.fa-bars {
+    visibility: hidden;
+}
+
+header {
+    background-image: url("assets/image-1.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height:80vh;
+    position: relative;
+
+    nav {
+        background-color: rgba(255,255,255,0.8);
+        width: 100%;
+        padding: 1%;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        div.wrapper.flex {
+            align-items:center;
+            justify-content: space-between;
+            ul {
+                width: 60%;
+                align-items:center;
+                justify-content: space-between;
+                li {
+                    font-weight: 500;
+                    text-align:center;
+                }
+                li:hover {
+                    font-weight: 1000;
+                }
+            }
+        }
+    }
+
+    section.landing {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: rgba(255,255,255,0.8); 
+        padding: 3% 7%; 
+        width: 50%;
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 3rem;
+        }
+        h3 {
+            font-family: $notoSerif;
+            font-style: italic;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        p {
+            margin: 1% 0;
+            font-family: $raleway;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media(max-width: 1020px) {
+    header {
+        nav {
+            div.wrapper.flex{
+                flex-wrap: wrap;
+                h2 {
+                    width: 100%;
+                    text-align: center;
+                    margin: 2% 0;
+                    letter-spacing: 1.3rem;
+                }
+                ul.flex {
+                    width: 100%;
+                    justify-content: space-around;
+                }
+            }
+        }
+
+        section.landing{
+            width: 60%;
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 533px) {
+    i.fas.fa-bars {
+        visibility: visible;
+        width: 100%;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+    ul.flex {
+        display:none;
+        li {
+            padding: 1% 0;
+        }
+    }
+    header {
+        section.landing {
+            width: 70%;
+        }
+    }
+}

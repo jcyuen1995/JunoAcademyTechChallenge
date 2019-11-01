@@ -1,0 +1,178 @@
+div.wrapper {
+    overflow:hidden;
+}
+section.blog {
+    padding: 4% 0;
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: rgba(0,0,0,0.8);
+        margin: 2% 0;
+    }
+
+    article.post {
+        width: 30%;
+        height: 100%;
+        float:left;
+        img {
+            width: 100%;
+            display: block;
+        }
+        section {
+            text-align:center;
+            padding: 5% 0;
+            background-color: #e5e5e5;
+            h3 {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+            }
+            h4 {
+                text-transform: capitalize;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 1.3rem;
+                font-family: $notoSerif;
+                margin: 2% 0;
+            }
+            p {
+                font-weight: 400;
+                font-size: 1.2rem;
+                font-family: $raleway;
+                text-align: left;
+                padding: 0 7%;
+            }
+            a {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: $raleway;
+                display:block;
+                color: red;
+                margin: 5% 0;
+                font-size: 1.3rem;
+                
+                &:hover {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        &.blog2{
+            margin: 0 5%;
+        }
+        // hot fix for a slightly bigger image than the rest 
+        &.blog3 {
+
+            img {
+                width: 99%;
+            }
+            section {
+                width: 99%;
+            }
+            p {
+                margin: 5% 0;
+            }
+        }
+
+        &.blog4{
+            width: 65%;
+            // hot fix for aligning the blog 4 post
+            position:relative;
+            transform: translateY(-10%);
+            section {
+                padding: 3% 0;
+
+                h4 {
+                    margin: 1% 0;
+                }
+                a {
+                    margin: 2% 0;
+                }
+            }
+        }
+
+    }
+}
+@media (max-width: 961px){
+    section.blog {
+        div.wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            h2 {
+                width: 100%;
+            }
+
+            article.post {
+                width: 40%;
+                //clear floats to use flex 
+                float:none;
+                margin-bottom: 3%;
+                
+                &.blog2{
+                    margin: 0 0;
+                }
+                &.blog3 {
+                    order: 2;
+                    margin: 0 20% 3% 20%;
+                    img {
+                        width: 100%;
+                    }
+                    section {
+                        width: 100%;
+                    }
+                    p {
+                        margin: 5% 0;
+                    }
+                }
+                &.blog4 {
+                    //clear previous style
+                    transform: translateY(0);
+                    width: 70%;
+                    order: 1;
+                }
+                section {
+                    text-align:center;
+                    padding: 5% 0;
+                    background-color: #e5e5e5;
+                    h3 {
+                        font-size: 1.3rem;
+                    }
+                    h4 {
+                        font-size: 1.3rem;
+                    }
+                    p {
+                        font-size: 1.1rem;
+                    }
+                    a {
+                        font-size: 1.2rem;
+                        
+                        &:hover {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 461px) {
+    section.blog{
+        div.wrapper{
+            article.post{
+                width: 100%;
+            
+                &.blog4 {
+                    transform: translateY(0);
+                    width: 100%;
+                    margin-top: 3%;
+                }
+
+                &.blog3 {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
