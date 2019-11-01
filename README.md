@@ -1,5 +1,8 @@
-# JunoAcedemyTechChallenge
+# JunoAcademyTechChallenge
 Tech challenge for Juno academy 
+## Requires 
+- Prepros
+
 ## Includes
 This project demonstates:
 
