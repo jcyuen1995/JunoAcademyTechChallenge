@@ -1,6 +1,6 @@
 ## JunoAcedemyTechChallenge
 Tech challenge for Juno academy 
-#Includes
+# Includes
 This project demonstates:
 
 
