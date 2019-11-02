@@ -1,4 +1,4 @@
-# JunoAcademyTechChallenge
+# JunoAcademy Tech Challenge
 Tech challenge for Juno academy 
 ## Requires 
 - Prepros
